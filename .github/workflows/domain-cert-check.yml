@@ -10,6 +10,7 @@ on:
       port:
         description:
         required: false
+        default: 443
 
 jobs:
   get_domain_details_job:
