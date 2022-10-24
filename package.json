@@ -10,11 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/jmtellez/domain-cert-checker.git"
   },
-  "keywords": [""],
+  "keywords": [
+    "ssl", "cert"
+  ],
   "author": "jmtellez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jmtellez/domain-cert-checker/issues"
   },
-  "homepage": "https://github.com/jmtellez/-domain-cert-checker#readme"
+  "homepage": "https://github.com/jmtellez/-domain-cert-checker#readme",
+  "dependencies": {
+    "ssl-checker": "^2.0.7"
+  }
 }
