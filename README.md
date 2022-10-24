@@ -19,7 +19,7 @@ Port number server is listening on. Default `443`.
 
 Domain details in json format:
 
-```json
+```js
 {
   daysRemaining: 143,
   valid: true,
