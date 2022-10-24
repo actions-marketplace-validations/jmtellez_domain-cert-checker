@@ -32,8 +32,20 @@ Domain details in json format:
 ## Usage
 
 ```yaml
-uses: actions/domain-cert-checker@v1.0
-with:
-  hostname: 'github.com'
-  port: 443
+on: [push]
+
+jobs:
+  get_domain_details_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Domain details
+        id: check
+        uses: jmtellez/domain-cert-checker@v1.0
+        with:
+            hostname: 'github.com'
+            port: 443
+ 
+      - name: Print details
+        run: echo ${{ steps.check.outputs.details }}
 ```
