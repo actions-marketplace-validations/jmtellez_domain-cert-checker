@@ -27,4 +27,4 @@ jobs:
       - name: Print details
         run: |
           echo toJSON(${{ steps.check.outputs.details }})
-          echo toJSON(${{ steps.check.outputs.details }}) >> $GITHUB_STEP_SUMMARY
+          echo "toJSON(${{ steps.check.outputs.details }})" >> $GITHUB_STEP_SUMMARY
