@@ -25,4 +25,6 @@ jobs:
           port: ${{ github.event.inputs.port }}
 
       - name: Print details
-        run: echo ${{ steps.check.outputs.details }}
+        run: |
+          echo toJSON(${{ steps.check.outputs.details }})
+          echo "toJSON(${{ steps.check.outputs.details }}) >> $GITHUB_STEP_SUMMARY
