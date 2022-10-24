@@ -1,0 +1,21 @@
+name: 'domain-cert-checker'
+description: 'Check domain's certificate details'
+author: jmtellez
+inputs:
+  url:  # id of input
+    description: Target URL
+    required: true
+    default: 'github.com'
+  port:
+    description: Port server is listening
+    required: false
+    default: 443
+outputs:
+  details: # id of output
+    description: 'Certificate details in json format'
+branding:
+  icon: award
+  color: blue
+runs:
+  using: 'node16'
+  main: 'action.js'
