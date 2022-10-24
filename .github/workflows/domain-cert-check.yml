@@ -1,0 +1,27 @@
+name: Get Domain Details
+
+on: 
+  workflow_dispatch:
+    inputs:
+      hostname: 
+        description:
+        required: true
+        default: github.com
+      port:
+        description:
+        required: false
+
+jobs:
+  get_domain_details_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Domain details
+        id: check
+        uses: jmtellez/domain-cert-checker@v1.0
+        with:
+          hostname: ${{ github.event.inputs.hostname }}
+          port: ${{ github.event.inputs.port }}
+
+      - name: Print details
+        run: echo ${{ steps.check.outputs.details }}
