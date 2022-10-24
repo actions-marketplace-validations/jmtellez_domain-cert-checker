@@ -15,10 +15,10 @@ jobs:
   get_domain_details_job:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: 
       - name: Get Domain details
         id: check
-        uses: jmtellez/domain-cert-checker@v1.0
+        uses: jmtellez/domain-cert-checker@v1.0.0
         with:
           hostname: ${{ github.event.inputs.hostname }}
           port: ${{ github.event.inputs.port }}
