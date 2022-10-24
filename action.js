@@ -7,6 +7,9 @@ const port = core.getInput('port' = 443);
 
 async function getDetails() {
   details = await sslChecker(hostname, { method: "GET", port: port });
+  
+  // log details
+  console.log(details);
   // set output
   core.setOutput('details', details);
 }
