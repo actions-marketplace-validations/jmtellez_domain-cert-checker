@@ -5,6 +5,9 @@ const sslChecker = require("ssl-checker");
 const hostname = core.getInput('hostname');
 const port = core.getInput('port');
 
+// logical assignment
+port ??= 443;
+
 async function getDetails() {
   details = await sslChecker(hostname, { method: "GET", port: port });
   
