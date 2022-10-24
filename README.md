@@ -41,7 +41,7 @@ jobs:
     steps:
       - name: Get Domain details
         id: check
-        uses: jmtellez/domain-cert-checker@v1.0
+        uses: jmtellez/domain-cert-checker@v1.0.0
         with:
             hostname: 'github.com'
             port: 443
