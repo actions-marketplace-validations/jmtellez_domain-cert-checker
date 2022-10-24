@@ -1,20 +1,20 @@
 {
-  "name": "cert-checker",
+  "name": "domain-cert-checker",
   "version": "1.0.0",
-  "description": "GitHub action to check certificate validation",
+  "description": "GitHub action to check domain's certificate details",
   "main": "action.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmtellez/cert-checker.git"
+    "url": "git+https://github.com/jmtellez/domain-cert-checker.git"
   },
   "keywords": [""],
   "author": "jmtellez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmtellez/cert-checker/issues"
+    "url": "https://github.com/jmtellez/domain-cert-checker/issues"
   },
-  "homepage": "https://github.com/jmtellez/cert-checker#readme"
+  "homepage": "https://github.com/jmtellez/-domain-cert-checker#readme"
 }
