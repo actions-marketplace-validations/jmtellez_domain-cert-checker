@@ -1,8 +1,15 @@
+const core = require('@actions/core');
 const sslChecker = require("ssl-checker");
 
-async function getDetails(hostname) {
-  details = await sslChecker(hostname, { method: "GET", port: 443 });
-  console.log(details);
+// Get inputs
+const hostname = core.getInput('hostname');
+const port = core.getInput('port' = 443);
+
+async function getDetails() {
+  details = await sslChecker(hostname, { method: "GET", port: port });
+  // set output
+  core.setOutput('details', details);
 }
 
-getDetails("github.com");
+// call getDetails
+getDetails(hostname);
