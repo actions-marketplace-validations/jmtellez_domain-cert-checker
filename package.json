@@ -11,7 +11,8 @@
     "url": "git+https://github.com/jmtellez/domain-cert-checker.git"
   },
   "keywords": [
-    "ssl", "cert"
+    "ssl",
+    "cert"
   ],
   "author": "jmtellez",
   "license": "ISC",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/jmtellez/-domain-cert-checker#readme",
   "dependencies": {
+    "@actions/core": "^1.10.0",
     "ssl-checker": "^2.0.7"
   }
 }
