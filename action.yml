@@ -2,8 +2,8 @@ name: 'domain-cert-checker'
 description: 'Check domain's certificate details'
 author: jmtellez
 inputs:
-  url:  # id of input
-    description: Target URL
+  hostname:  # id of input
+    description: Target hostname
     required: true
     default: 'github.com'
   port:
