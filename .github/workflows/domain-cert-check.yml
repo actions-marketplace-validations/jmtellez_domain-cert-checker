@@ -27,4 +27,4 @@ jobs:
       - name: Print details
         run: |
           echo ${{ steps.check.outputs.details }}
-          echo "```js ${{ steps.check.outputs.details }}```" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.check.outputs.details }}" >> $GITHUB_STEP_SUMMARY
