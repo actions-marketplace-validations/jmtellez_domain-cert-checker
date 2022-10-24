@@ -1,5 +1,5 @@
-name: 'domain-cert-checker'
-description: 'Check domain's certificate details'
+name: domain-cert-checker
+description: Check domain certificate details
 author: jmtellez
 inputs:
   hostname:  # id of input
@@ -12,7 +12,7 @@ inputs:
     default: 443
 outputs:
   details: # id of output
-    description: 'Certificate details in json format'
+    description: Certificate details in json format
 branding:
   icon: award
   color: blue
